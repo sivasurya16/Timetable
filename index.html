@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="shortcut icon" type="text/png" href="images/thumb.png">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+	<link rel="stylesheet" type="text/css" href="styles/style.css">
+	<title>Timetable</title>
+</head>
+
+<body>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<nav class="w3-top w3-bar w3-black">
+		<a href="#home" class="w3-button w3-bar-item  w3-padding-16">HOME</a>
+		<a href="#Timetable" class="w3-button w3-bar-item w3-padding-16">TIMETABLE</a>
+		<a href="#links" class="w3-button w3-bar-item w3-padding-16">LINKS</a>
+		<a href="#about" class="w3-button w3-bar-item w3-padding-16">ABOUT</a>
+	</nav>
+
+	<div id='Timetable'>	
+		<header id = 'header' class = 'w3-display-container header w3-center'>Timetable</header>
+		<script src='scripts/scroll_effect.js'></script>
+		<div>
+			<table class="w3-center width center" style="padding-top: 250px;">
+			<th colspan="7">Class XII B</th>
+			<tr>
+				<th>Time/Day</th>
+				<th>Monday</th>
+				<th>Tuesday</th>
+				<th>Wednesday</th>
+				<th>Thursday</th>
+				<th>Friday</th>
+				<th>Saturday</th>
+			</tr>
+			<tr>
+				
+				<td><b>8:45 - 9:45 am</b></td>
+				<td>CS</td>
+				<td>Chemistry</td>
+				<td>Maths</td>
+				<td>English</td>
+				<td>CS</td> 
+				<td>Maths</td>
+
+			</tr>
+			<tr>
+				<td><b>10 - 11 am</b></td>
+				<td>Physics</td>
+				<td>Maths</td>
+				<td>CS</td>
+				<td>Chemistry</td>
+				<td>English</td>
+				<td>V.E</td>
+			</tr>
+			<tr>
+				<td><b>11:10 - 12:10 pm</b></td>
+				<td>-</td>
+				<td>CS(B2)</td>
+				<td>-</td>
+				<td>CS(B2)</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			<tr>
+				<td><b>12:20 - 1:20 pm</b></td>
+				<td>Chemistry</td>
+				<td>-</td>
+				<td>Physics</td>
+				<td>-</td>
+				<td>Physics</td>
+				<td>CS(B2)</td>
+			</tr>
+			<tr>
+				<td><b>2 - 3:30 pm</b></td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+				<td>-</td>
+			</tr>
+			</table>
+		</div>
+	</div>
+	<div id = 'quotes' class ='w3-container w3-center' style="padding-top: 100px;">
+		<script src="scripts/quotes.js"></script>
+	</div>
+	<div id = 'home' class = 'w3-container w3 center' align="center">
+		<h1 type="text" id="currentTime" style="padding-top: 150px;border-top: -150px;"></h1>
+		<script src = "scripts/timetrack.js"></script>
+	</div>
+	<div id='join' align="center">		
+		
+		<script src = 'scripts/joinbtn.js'></script>
+
+	</div>
+	<div class='w3-container' id = 'links' style='display: flex; justify-content: center; justify-content: space-around; padding-top: 100px; padding-bottom: 200px;'>
+		<div id ='inner'>
+			<font size = '+2'>
+			<h2><b>Subjects</b></h2>
+			<ul>
+				<li><a id ='English' href='https://meet.google.com/hdh-odox-yxy' target="_blank">English</a></li> 
+				<li><a id = 'Physics' href='https://meet.google.com/zrm-morz-egj' target="_blank">Physics</a></li>
+				<li><a id ='Chemistry'href='https://meet.google.com/crf-gxez-qyo' target="_blank">Chemistry</a></li>
+				<li><a id = 'Maths'href='https://meet.google.com/eoc-guvm-csy' target="_blank">Maths</a></li>
+				<li><a id = 'CS' href='https://meet.google.com/xpn-jfxo-dcn' target="_blank">CS</a></li>
+			</ul>
+			</font>
+		</div>
+		<div>
+			<font size = '+2'>
+			<h2><b>Extra classes</b></h2>
+			<ul>
+				<li><a href='https://www.freeconferencecall.com/wall/boopathypet1980/start_application' target="_blank">P.E.T</a></li>
+				<li><a href="https://join.freeconferencecall.com/nithmadhu1206" target='_blank'>Yoga</a></li>
+			</ul>
+			</font>
+		</div>
+	</div>
+		<footer id='about' class="w3-container w3-padding-32 w3-center w3-black w3-xlarge">
+			<h2>Made by Sivasurya</h2>
+			<p style="font-size: x-small;">Idk why I am doing this 😢</p>
+		</footer>
+
+</body>
+</html>
