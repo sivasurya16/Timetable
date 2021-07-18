@@ -3,20 +3,22 @@
 	margin-right: auto;
 }
 .width{
-	width: 90%;
+	width: 100%;
 }
 
 .header {
 	padding: 80px;
 	text-align: center;
 	background-image: url(../images/headerpic.jpg);
+	background-size: cover;
+	background-position: top;
 	color: black;
-	font-size: 100px;
+	font-size: 6vw;
 	font-weight: bold;
-	position: fixed; /* Fixed position - sit on top of the page */
+	position: fixed;  /*Fixed position - sit on top of the page */
 	top: 0;
-	width: 100%; /* Full width */
-	transition: 0.2s;
+	width: 100vw; /* Full width */
+	transition: 0.3s;
 	padding-bottom: 1px;
 	/*border-bottom-width: 100px;*/
 }
@@ -25,7 +27,7 @@
 #Timetable {
 	font-family: Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
-	width: 100%;
+	/*width: 100vw;*/
 }
 
 #Timetable td, #Timetable th {
@@ -51,3 +53,21 @@
 	top: 150px;
 	/*visibility: hidden;*/
 }
+
+/*div {*/
+    /* Height and width fallback for older browsers. */
+    /*height: 100%;*/
+    /*width: 100%;*/
+
+    /* Set the height to match that of the viewport. */
+    /*height: 100vh;*/
+
+    /* Set the width to match that of the viewport. */
+    /*width: 100vw;*/
+
+    /* Remove any browser-default margins. */
+    /*margin: 0;*/
+    /*object-fit: contain;*/
+    /*position: static;*/
+/*}*/
+
