@@ -37,7 +37,7 @@ function main(){
 	
 	/*Timetable with time in 24hrs format*/
 	let table={
-		'Sunday':{'8:45-9:45':'cs'},
+		'Sunday':{},
 		'Monday':{"8:45-9:45":'CS','10:0-11:0':"Physics",'12:20-13:20':'Chemistry'},
 		'Tuesday':{"8:45-9:45":'Chemistry','10:0-11:0':"Maths"},
 		'Wednesday':{"8:45-9:45":'Maths','10:0-11:0':"CS",'12:20-13:20':'Physics'},
@@ -52,7 +52,7 @@ function main(){
 	let data = {'hours':[],'minutes':[]};
 
 	console.log(temp);
-	if (Object.keys(temp)){
+	if (Object.keys(temp).length){
 	/*Determines if you have atleast one class that day*/
  
 		for (var key in temp){
