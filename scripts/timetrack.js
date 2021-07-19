@@ -51,7 +51,7 @@ function main(){
 
 	let data = {'hours':[],'minutes':[]};
 
-	console.log(temp);
+	// console.log(temp);
 	if (Object.keys(temp).length){
 	/*Determines if you have atleast one class that day*/
  
@@ -61,40 +61,41 @@ function main(){
 
 			key = key.split('-');
 
-			console.log(key)
-			key.forEach(time =>{
-
+			// console.log(key)
+			for (i=0;i<key.length;i++){
+			
+				// console.log(key,i,'hey')
 
 	
-				let temp2=time.split(':');
+				let temp2=key[i].split(':');
 				let hours=temp2[0];
 				let minutes=temp2[1].split(' ')[0];
-				let zone=temp2[1].split(' ')[1];
+				// let zone=temp2[1].split(' ')[1];
+				// console.log(temp2,'h')
 
 		
 				data['hours'].push(hours);
 				data['minutes'].push(minutes);
-	
-			})
 			
+			// console.log(temp2,'bruh')
 
 			let x=get_time();
 
 			let final = delta_hours(Number(data['hours'][0]),Number(x[0]))
 			final += delta_minutes(Number(data['minutes'][0]),Number(x[1]))
-			console.log(final)
+			// console.log(final)
 			
 			if (final<30 & final>5 ){
-				document.getElementById('currentTime').innerHTML='You have '+(temp[b.join('-')])+' class in '+final+' minutes'
+				document.getElementById('currentTime').innerHTML='You have '+(temp[key.join('-')])+' class in '+final+' minutes'
 				return
 			}
 			else if (final<=5 & final>0){
-				document.getElementById('currentTime').innerHTML='You have '+(temp[b.join('-')])+' class in '+final+' minutes'
+				document.getElementById('currentTime').innerHTML='You have '+(temp[key.join('-')])+' class in '+final+' minutes'
 				return
 				
 			}
 			else if (final<=0&final>=-60){
-				document.getElementById('currentTime').innerHTML='You have '+(temp[b.join('-')])+' class now !!'
+				document.getElementById('currentTime').innerHTML='You have '+(temp[key.join('-')])+' class now !!'
 				return
 			}
 			else{
@@ -102,6 +103,7 @@ function main(){
 			}
 			
 		}
+	}
 	}
 	else{
 	/*Else part of checking if you have atleast a class that day*/

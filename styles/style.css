@@ -12,12 +12,14 @@
 	background-image: url(../images/headerpic.jpg);
 	background-size: cover;
 	background-position: top;
+
 	color: black;
 	font-size: 6vw;
 	font-weight: bold;
 	position: fixed;  /*Fixed position - sit on top of the page */
-	top: 0;
+	top: 1;
 	width: 100vw; /* Full width */
+	/*height: 15vw;*/
 	transition: 0.3s;
 	padding-bottom: 1px;
 	/*border-bottom-width: 100px;*/
@@ -71,3 +73,8 @@
     /*position: static;*/
 /*}*/
 
+@media only screen and (max-device-width: 768px) {
+  .header {
+    background-position: bottom;
+  }
+}
