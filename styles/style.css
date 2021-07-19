@@ -56,25 +56,16 @@
 	/*visibility: hidden;*/
 }
 
-/*div {*/
-    /* Height and width fallback for older browsers. */
-    /*height: 100%;*/
-    /*width: 100%;*/
 
-    /* Set the height to match that of the viewport. */
-    /*height: 100vh;*/
-
-    /* Set the width to match that of the viewport. */
-    /*width: 100vw;*/
-
-    /* Remove any browser-default margins. */
-    /*margin: 0;*/
-    /*object-fit: contain;*/
-    /*position: static;*/
-/*}*/
 
 @media only screen and (max-device-width: 768px) {
-  .header {
-    background-position: bottom;
-  }
+	.header {
+		position: relative;
+	}
+}
+@media only screen and (min-device-width: 769px){
+	#container{
+		padding-top:20vw;
+		/*margin-top: -200px;*/
+	}
 }
