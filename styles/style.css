@@ -62,10 +62,19 @@
 	.header {
 		position: relative;
 	}
+	#desktop{
+		display: block;
+		visibility: hidden;
+	}
+
 }
 @media only screen and (min-device-width: 769px){
 	#container{
 		padding-top:20vw;
 		/*margin-top: -200px;*/
+	}
+		#mobile{
+		display: block;	
+		visibility: hidden;
 	}
 }
