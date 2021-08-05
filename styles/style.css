@@ -58,7 +58,7 @@
 
 
 
-@media only screen and (max-device-width: 768px) {
+@media only screen and (max-width: 768px) {
 	.header {
 		position: relative;
 	}
@@ -68,7 +68,7 @@
 	}
 
 }
-@media only screen and (min-device-width: 769px){
+@media only screen and (min-width: 769px){
 	#container{
 		padding-top:20vw;
 		/*margin-top: -200px;*/

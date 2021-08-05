@@ -33,17 +33,17 @@ function delta_minutes(a,b){
 
 function main(){
 	/*Main function to make things work*/
-	/*let table={6:{'9:30-10:30':'Maths'}};*/
+	// let table={'Thursday':{'21:45-24:30':'Maths','22:46-24:45':'CS(B2)'}};
 	
 	/*Timetable with time in 24hrs format*/
 	let table={
 		'Sunday':{},
 		'Monday':{"8:45-9:45":'CS','10:0-11:0':"Physics",'12:20-13:20':'Chemistry'},
-		'Tuesday':{"8:45-9:45":'Chemistry','10:0-11:0':"Maths"},
+		'Tuesday':{"8:45-9:45":'Chemistry','10:0-11:0':"Maths",'11:10-12:10':'CS(B2)'},
 		'Wednesday':{"8:45-9:45":'Maths','10:0-11:0':"CS",'12:20-13:20':'Physics'},
-		'Thursday':{"8:45-9:45":'English','10:0-11:0':"Chemistry"},
-		'Friday':{"8:45-9:45":'CS','10:0-11:0':"English",'12:20-13:20':'Physics'},
-		'Saturday':{"8:45-9:45":'Maths','10:0-11:0':"VE"},
+		'Thursday':{"8:45-9:45":'English','10:0-11:0':"Chemistry",'11:10-12:10':'CS(B2)'},
+		'Friday':{"8:45-9:45":'CS','10:0-11:0':"English",'11:10-12:10':'V.E','12:20-13:20':'Physics'},
+		'Saturday':{"8:45-9:45":'Maths','11:10-12:10':'Physics','12:20-13:20':'CS(B2)'},
 	}
 
 	let temp= table[get_day()];
