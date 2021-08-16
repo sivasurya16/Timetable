@@ -9,5 +9,5 @@ $.ajax(settings).done(function (response) {
 	const data = JSON.parse(response);
 	// console.log(data);
 	let temp=data[Math.floor(Math.random() * data.length)];
-	document.getElementById('quotes').innerHTML=`<h1><p>${temp['text']}</p><p>- ${temp['author']}</p></h1>`
+	document.getElementById('quotes').innerHTML=`<h1><p>${temp['text']}</p><p>- ${temp['author'] || 'Unknown'}</p></h1>`
 });
