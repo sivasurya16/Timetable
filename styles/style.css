@@ -1,3 +1,6 @@
+html{
+	scroll-behavior: smooth;
+}
 .center{
 	margin-left: auto;
 	margin-right: auto;
@@ -56,7 +59,13 @@
 	/*visibility: hidden;*/
 }
 
-
+#links{
+	display: flex; 
+	justify-content: center; 
+	justify-content: space-around; 
+	padding-top: 150px;
+	padding-bottom: 100px;
+}
 
 @media only screen and (max-width: 768px) {
 	.header {
