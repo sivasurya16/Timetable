@@ -38,12 +38,12 @@ function main(){
 	/*Timetable with time in 24hrs format*/
 	let table={
 		'Sunday':{},
-		'Monday':{"8:45-9:45":'CS','10:0-11:0':"Physics",'12:20-13:20':'Chemistry'},
-		'Tuesday':{"8:45-9:45":'Chemistry','10:0-11:0':"Maths",'11:10-12:10':'CS(B2)'},
-		'Wednesday':{"8:45-9:45":'Maths','10:0-11:0':"CS",'12:20-13:20':'Physics'},
-		'Thursday':{"8:45-9:45":'English','10:0-11:0':"Chemistry",'11:10-12:10':'CS(B2)'},
-		'Friday':{"8:45-9:45":'CS','10:0-11:0':"English",'11:10-12:10':'V.E','12:20-13:20':'Physics'},
-		'Saturday':{"8:45-9:45":'Maths','11:10-12:10':'Physics','12:20-13:20':'CS(B2)'},
+		'Monday':{"8:45-9:45":'CS(B1)/KTPI','10:0-11:0':"Physics",'12:20-13:20':'Chemistry','14:0-15:0':'Maths/Biology'},
+		'Tuesday':{"8:45-9:45":'Chemistry','10:0-11:0':"Maths/Biology",'11:10-12:10':'CS(B2)','14:0-15-0':'Maths/Biology'},
+		'Wednesday':{"8:45-9:45":'Maths/Biology','10:0-11:0':"CS(B1)/KTPI",'11:10-12:10':'CS(B2)','12:20-13:20':'Chemistry','14:0-15:0':'Physics'},
+		'Thursday':{"8:45-9:45":'English','10:0-11:0':"Chemistry",'11:10-12:10':'CS(B2)','12:20-13:20':'Physics','14:0-15:0':'CS(B1)/KTPI'},
+		'Friday':{"8:45-9:45":'CS(B1)/KTPI','10:0-11:0':"English",'12:20-13:20':'Physics','14:0-15:0':'Chemistry'},
+		'Saturday':{"8:45-9:45":'Maths','10:0-11:0':'Physics','12:20-13:20':'CS(B2)'},
 	}
 
 	let temp= table[get_day()];
